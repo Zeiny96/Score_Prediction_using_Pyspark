@@ -26,6 +26,7 @@ output_csv_file = "./output.csv"
 if not os.path.exists(csv_file):
 	database = sqlite3.connect(sql_database_file)
 	db_df = pd.read_sql_query("SELECT * FROM Reviews", database)
+	db_df = db_df.replace(',',' ')
 	db_df.to_csv(csv_file, index=False)
 
 
