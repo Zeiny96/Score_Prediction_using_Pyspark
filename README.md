@@ -23,7 +23,8 @@
 conda create -n pyspark python=3.9 -y
 conda activate pyspark
 conda install openjdk pyspark scikit-learn scipy matplotlib seaborn -y
-sudo apt-get install sqlite3
+sudo apt-get update -y
+sudo apt-get install sqlite3 -y
 ```
 
 ## Structure
