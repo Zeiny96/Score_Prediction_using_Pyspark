@@ -43,7 +43,7 @@ sudo apt-get install sqlite3
 - Any rows with `HelpfulnessNumerator` less than or equal to zero were excluded.
 - The desired features were `Summary` and `Text`.
 - They were concatenated into one column, tokenized, cleaned of stop words, then vectorized.
-- All these steps can be found with their in-code documentation at [train.py](train.py).
+- All these steps can be found with their in-code documentation in [train.py](train.py).
 
 ## Training
 - Using the preprocessed data a logistic regression model was trained.
