@@ -37,7 +37,7 @@ sudo apt-get install sqlite3
 `output_csv_file`: Containing the path where the output CSV file with the model predictions will be exported.              
 
 ## Preprocessing
-- This [SQL database file](https://drive.google.com/file/d/1aN1Ln4exHJzI7vL9xN8Pg4YqYer7_ZdZ/view) was used for our training and evaluation.
+- The Amazon review SQL database file was used for our training and evaluation.
 - Before training the model any unwanted features were excluded.
 - Any Null rows were removed.
 - All columns were casted to either string or float types based on their content.
@@ -69,8 +69,9 @@ sudo apt-get install sqlite3
 
 ## Prediction
 - To predict new scores given a database file use [test.py](test.py), where it will read the SQL database file and produce the predictions with their indices in a CSV file.
-- The same preprocessing will be done on any new test sets except for removing any rows based on the `HelpfulnessNumerator`.
-- Due to these preprocessing steps some rows may be droped.
+- Any new test set will be cleaned and the same preprocessing will be done to it except for removing any rows based on the `HelpfulnessNumerator`.
+- Due to these preprocessing steps some rows may be droped, for example:
+  - If we used our available training SQL database as a test set 10 rows will be droped from the 568455 available rows.
 - All the predictions in the output file will contain their indices to distinguish them, and if any index was missing it means it was droped due to it containing wrong datatype or Nulls.
 
 
