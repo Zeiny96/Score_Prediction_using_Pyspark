@@ -16,7 +16,7 @@
 - Anaconda3
 
 ## Installation
-- To setup a conda environment with our needed libraries follow the next steps:
+- To setup and activate a conda environment with our needed libraries follow the next steps:
 ```
 conda create -n pyspark python=3.9 -y
 conda activate pyspark
