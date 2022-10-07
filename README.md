@@ -58,18 +58,18 @@ sudo apt-get install sqlite3
 
 |  | **Precision** | **Recall** | **F1-score** | **Support** |
 | ------ | ------ | ------ | ------ | ------ | 
-| 1.0 | 0.93 | 0.93 | 0.93 | 777 |
-| 2.0 | 0.89 | 0.87 | 0.88 | 3692 |
-| 3.0 | 0.89 | 0.88 | 0.88 | 4789 |
-| 4.0 | 0.85 | 0.89 | 0.87 | 8482 |
-| 5.0 | 0.97 | 0.96 | 0.97 | 40746 |
+| 1.0 | 0.93 | 0.93 | 0.93 | 7828 |
+| 2.0 | 0.88 | 0.87 | 0.87 | 3593 |
+| 3.0 | 0.88 | 0.87 | 0.87 | 4745 |
+| 4.0 | 0.85 | 0.88 | 0.86 | 8489 |
+| 5.0 | 0.97 | 0.96 | 0.96 | 40831 |
 | **Accuracy** | 0.94 | 0.94 | 0.94 | 65486 |
 | **Macro-Avg** | 0.91 | 0.91 | 0.91 | 65486 |
 | **Weighted-Avg** | 0.94 | 0.94 | 0.94 | 65486 |
 - **Confusion matrix**:                        
 ![alt text](Confusion_matrix.png)
 - Due to the random splitting the test set isn't balanced, so we will mainly look at the macro average F1-score which isn't affected by the classes imbalance.          
-- As shown in the results table our macro-average F1-score is 91% which is still a good and acceptable result.
+- As shown in the results table our macro-average F1-score is 90% which is still a good and acceptable result.
 
 ## Prediction
 - To predict new scores given a database file use [test.py](test.py), where it will read the SQL database file and produce the predictions with their indices in a CSV file.
