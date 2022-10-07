@@ -64,7 +64,7 @@ sudo apt-get install sqlite3
 | 4.0 | 0.85 | 0.88 | 0.86 | 8489 |
 | 5.0 | 0.97 | 0.96 | 0.96 | 40831 |
 | **Accuracy** | 0.94 | 0.94 | 0.94 | 65486 |
-| **Macro-Avg** | 0.91 | 0.91 | 0.91 | 65486 |
+| **Macro-Avg** | 0.90 | 0.90 | 0.90 | 65486 |
 | **Weighted-Avg** | 0.94 | 0.94 | 0.94 | 65486 |
 - **Confusion matrix**:                        
 ![alt text](Confusion_matrix.png)
