@@ -37,6 +37,7 @@ sudo apt-get install sqlite3
 `output_csv_file`: Containing the path where the output CSV file with the model predictions will be exported.
 
 ## Preprocessing
+- This [SQL database file](https://drive.google.com/file/d/1aN1Ln4exHJzI7vL9xN8Pg4YqYer7_ZdZ/view) was used for our training and evaluation.
 - Before training the model any unwanted features were excluded.
 - Any Null rows were removed.
 - All columns were casted to either string or float types based on their content.
