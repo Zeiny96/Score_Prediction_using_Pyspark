@@ -35,7 +35,7 @@ df = spark.read.csv("database.csv",header=True,inferSchema=True)
 
 
 ################################################ Defining desired columns and their types
-float_columns = set(["HelpfulnessNumerator", "Id"])
+float_columns = set(["Id"])
 str_columns = set(["Summary", "Text"])
 columns = list(float_columns.union(str_columns))
 df = df.select(columns)
