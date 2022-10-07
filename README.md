@@ -68,8 +68,7 @@ sudo apt-get install sqlite3
 ![alt text](Confusion_matrix.png)
 
 ## Prediction
-- To predict new scores given a database file.
-- Use [test.py](test.py), where it will read the SQL database file and produce the predictions with their indices in a CSV file.
+- To predict new scores given a database file use [test.py](test.py), where it will read the SQL database file and produce the predictions with their indices in a CSV file.
 - The same preprocessing will be done on any new test sets except for removing any rows based on the `HelpfulnessNumerator`.
 - Due to these preprocessing steps some rows may be droped.
 - All the predictions in the output file will contain their indices to distinguish them, and if any index was missing it means it was droped due to it containing wrong datatype or Nulls.
