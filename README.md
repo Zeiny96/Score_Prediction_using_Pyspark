@@ -68,6 +68,8 @@ sudo apt-get install sqlite3
 | **Weighted-Avg** | 0.94 | 0.94 | 0.94 | 65486 |
 - **Confusion matrix**:                        
 ![alt text](Confusion_matrix.png)
+- Due to the random splitting the test set isn't balanced, so we will mainly look at the macro average F1-score which isn't affected by the classes imbalance.          
+- As shown in the results table our macro-average F1-score is 91% which is still a good and acceptable result.
 
 ## Prediction
 - To predict new scores given a database file use [test.py](test.py), where it will read the SQL database file and produce the predictions with their indices in a CSV file.
