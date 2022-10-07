@@ -25,16 +25,16 @@ sudo apt-get install sqlite3
 ```
 
 ## Structure
-- [train.py](train.py): Used to load a given SQL database, train a logistic regression classifier using it, then evaluate the model, where its parameters are:
-`sql_database_file`: Containing the SQL database file path.
-`csv_file`: Containing the path to dump the CSV database file version in.
-`model_path`: Containing the directory to export the trained model to.
+- [train.py](train.py): Used to load a given SQL database, train a logistic regression classifier using it, then evaluate the model, where its parameters are:            
+`sql_database_file`: Containing the SQL database file path.                   
+`csv_file`: Containing the path to dump the CSV database file version in.                  
+`model_path`: Containing the directory to export the trained model to.                  
 
-- [test.py](test.py): Used to load a given SQL database, then predict their scores, where its parameters are:
-`sql_database_file`: Containing the SQL database file path.
-`csv_file`: Containing the path to dump the CSV database file version in.
-`model_path`: Containing the directory where the trained model will be exported.
-`output_csv_file`: Containing the path where the output CSV file with the model predictions will be exported.
+- [test.py](test.py): Used to load a given SQL database, then predict their scores, where its parameters are:                    
+`sql_database_file`: Containing the SQL database file path.               
+`csv_file`: Containing the path to dump the CSV database file version in.                
+`model_path`: Containing the directory where the trained model will be exported.                
+`output_csv_file`: Containing the path where the output CSV file with the model predictions will be exported.              
 
 ## Preprocessing
 - This [SQL database file](https://drive.google.com/file/d/1aN1Ln4exHJzI7vL9xN8Pg4YqYer7_ZdZ/view) was used for our training and evaluation.
