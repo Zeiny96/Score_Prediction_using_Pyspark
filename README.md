@@ -48,13 +48,13 @@ sudo apt-get install sqlite3 -y
 - The desired features were `Summary` and `Text`.
 - They were concatenated into one column, tokenized, cleaned of stop words, then vectorized.
 - All these steps can be found with their in-code documentation in [train.py](train.py).
+- The dataset was split into 75% training set to train the model and 25% test set to evaluate the model on.
 
 ## Training
-- Using the preprocessed data a logistic regression model was trained.
+- Using the preprocessed training data a logistic regression model was trained.
 - This model predicts the score based on its input data.
 
 ## Evaluation
-- The dataset was split into 75% train set and 25% test set to evaluate the model on.
 - Using the created test set the model got the following results:              
 
 |  | **Precision** | **Recall** | **F1-score** | **Support** |
