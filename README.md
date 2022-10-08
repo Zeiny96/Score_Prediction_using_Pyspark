@@ -59,15 +59,15 @@ sudo apt-get install sqlite3 -y
 
 |  | **Precision** | **Recall** | **F1-score** | **Support** |
 | ------ | ------ | ------ | ------ | ------ | 
-| **Class 1** | 0.93 | 0.93 | 0.93 | 7828 |
-| **Class 2** | 0.88 | 0.87 | 0.87 | 3593 |
-| **Class 3** | 0.88 | 0.87 | 0.87 | 4745 |
-| **Class 4** | 0.85 | 0.88 | 0.86 | 8489 |
-| **Class 5** | 0.97 | 0.96 | 0.96 | 40831 |
-| **Accuracy** | 0.94 | 0.94 | 0.94 | 65486 |
-| **Micro-Avg** | 0.94 | 0.94 | 0.94 | 65486 |
-| **Macro-Avg** | 0.90 | 0.90 | 0.90 | 65486 |
-| **Weighted-Avg** | 0.94 | 0.94 | 0.94 | 65486 |
+| **Class 1** | 93% | 93% | 93% | 7828 |
+| **Class 2** | 88% | 87% | 87% | 3593 |
+| **Class 3** | 88% | 87% | 87% | 4745 |
+| **Class 4** | 85% | 88% | 86% | 8489 |
+| **Class 5** | 97% | 96% | 96% | 40831 |
+| **Accuracy** | 94% | 94% | 94% | 65486 |
+| **Micro-Avg** | 94% | 94% | 94% | 65486 |
+| **Macro-Avg** | 90% | 90% | 90% | 65486 |
+| **Weighted-Avg** | 94% | 94% | 94% | 65486 |
 - **Confusion matrix**:                        
 ![alt text](Confusion_matrix.png)
 - Due to the random splitting the test set isn't balanced, so we will mainly look at the macro average F1-score which isn't affected by the classes imbalance.          
